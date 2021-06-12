@@ -40,7 +40,7 @@ export const getHotfixLabel = (baseBranch: string): string => {
 
 export const getJIRAClient = (baseURL: string, token: string): JIRAClient => {
   const client = axios.create({
-    baseURL: `${baseURL}/rest/api/latest`,
+    baseURL: `${baseURL}/rest/api/2`,
     timeout: 2000,
     headers: { Authorization: `Basic ${token}` },
   });
